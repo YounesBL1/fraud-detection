@@ -5,8 +5,7 @@ in a highly imbalanced dataset (492 frauds out of 284,807 transactions, 0.17%).
 
 ## Dataset
 Kaggle "Credit Card Fraud Detection" (ULB). Download `creditcard.csv` from
-https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud and place it in the project folder.
-The file is not included in this repo because of its size.
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud.
 
 ## Approach
 1. Load data and run exploratory analysis
