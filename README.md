@@ -38,6 +38,11 @@ Validation comparison (PR-AUC): Random Forest 0.872, Logistic Regression 0.787, 
 
 The model catches about three out of four frauds while raising very few false alarms.
 Accuracy is not used as the main metric, since predicting "no fraud" every time already gives 99.8%.
+### Plots
+
+![Class distribution](images/class_distribution.png)
+![Confusion matrix](images/confusion_matrix.png)
+![Feature importance](images/feature_importance.png)
 
 ## How to run
 pip install -r requirements.txt
