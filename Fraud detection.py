@@ -14,7 +14,7 @@ from sklearn.preprocessing import RobustScaler
 SEED = 42
 
 # Step 1: Load data
-df = pd.read_csv("C:/Users/youne/OneDrive/Desktop/project/Fraud detection.py")
+df = pd.read_csv("C:/Users/youne/OneDrive/Desktop/project/creditcard.csv")
 print(df.shape, "| missing:", df.isnull().sum().sum(), "| duplicates:", df.duplicated().sum())
 
 # Step 2: EDA
@@ -72,7 +72,7 @@ grids = {
 }
 search = RandomizedSearchCV(
     models[best_name], grids[best_name],
-    n_iter=min(8, len(ParameterGrid(grids[best_name]))), scoring="average_precision",
+    n_iter=min(3, len(ParameterGrid(grids[best_name]))), scoring="average_precision",
     cv=StratifiedKFold(3, shuffle=True, random_state=SEED),
     random_state=SEED, verbose=1)
 search.fit(X_train, y_train)
